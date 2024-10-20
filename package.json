@@ -1,17 +1,11 @@
 {
-  "homepage": "https://jaideep-27.github.io/my-portfolio",
   "name": "my-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "serve": "vite preview",
     "build": "vite build",
-    "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
