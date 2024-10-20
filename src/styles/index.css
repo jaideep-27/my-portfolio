@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white; /* White background */
+  color: black; /* Black text */
+  font-family: 'Jost', sans-serif; /* Jost font */
+}
+
+a {
+  text-decoration: none; /* Remove underline from links */
+}
+
+.rounded {
+  border-radius: 8px; /* Rounded corners for all components */
+}
+
+.transition {
+  transition: all 0.3s ease; /* Smooth transitions */
+}
