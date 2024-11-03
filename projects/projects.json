@@ -2,7 +2,7 @@
   {
     "name": "Portfolio Website",
     "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
-    "image": "assets/images/projects/portfolio1.PNG",
+    "image": "https://ibb.co/g3SdKmn",
     "category": "basicweb",
     "links": {
       "view": "#",
@@ -12,7 +12,7 @@
   {
     "name": "Dream Path",
     "desc": "An AI web application that helps students find their ideal career path using AI.",
-    "image": "assets/images/projects/dreampath.PNG",
+    "image": "https://ibb.co/28v8tgX",
     "category": "basicweb",
     "links": {
       "view": "https://dreampath-cw.my.canva.site/",
@@ -22,7 +22,7 @@
   {
     "name": "Nakshatra Explorers",
     "desc": "A platform to explore the beauty of stars and learn about different constellations and celestial events.",
-    "image": "assets/images/projects/ne.PNG",
+    "image": "https://ibb.co/PM2MSJP",
     "category": "basicweb",
     "links": {
       "view": "https://jaideep-27.github.io/Nakshatra_Explorers/",
@@ -32,7 +32,7 @@
   {
     "name": "Helpers for Elders",
     "desc": "An application that connects elderly individuals with nearby helpers for immediate assistance through a simple interface.",
-    "image": "assets/images/projects/hfe.PNG",
+    "image": "https://ibb.co/6JGhJdr",
     "category": "mern",
     "links": {
       "view": "https://jaideep-27.github.io/Helpers_for_elders/",
