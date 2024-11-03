@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
+    "image": "portfolio1",
+    "category": "basicweb",
+    "links": {
+      "view": "#",
+      "code": "https://github.com/jaideep-27/my-portfolio"
+    }
+  },
+  {
+    "name": "Dream Path",
+    "desc": "An AI web application that helps students find their ideal career path using AI.",
+    "image": "dreampath",
+    "category": "basicweb",
+    "links": {
+      "view": "https://dreampath-cw.my.canva.site/",
+      "code": "https://github.com/jaideep-27/dreampath"
+    }
+  },
+  {
+    "name": "Nakshatra Explorers",
+    "desc": "A platform to explore the beauty of stars and learn about different constellations and celestial events.",
+    "image": "ne",
+    "category": "basicweb",
+    "links": {
+      "view": "https://jaideep-27.github.io/Nakshatra_Explorers/",
+      "code": "https://github.com/jaideep-27/Nakshatra_Explorers"
+    }
+  },
+  {
+    "name": "Helpers for Elders",
+    "desc": "An application that connects elderly individuals with nearby helpers for immediate assistance through a simple interface.",
+    "image": "hfe",
+    "category": "mern",
+    "links": {
+      "view": "https://jaideep-27.github.io/Helpers_for_elders/",
+      "code": "https://github.com/jaideep-27/Helpers_for_elders"
+    }
+  },
+  {
+    "name": "UI/UX",
+    "desc": "An application in development.",
+    "image": "webviewapp",
+    "category": "android",
+    "links": {
+      "view": "#",
+      "code": "#"
+    }
+  }
+]
