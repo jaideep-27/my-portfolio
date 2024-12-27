@@ -1,6 +1,6 @@
 # 🚀 My Portfolio
 
-<div align="center">
+<div>
   <h3>🌟 A collection of my work and learning journey 🌟</h3>
 </div>
 
