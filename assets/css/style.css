@@ -462,55 +462,70 @@ header .navbar ul li a:hover {
 .skills {
   min-height: 90vh;
   padding: 2rem 9%;
+  background: linear-gradient(to bottom, #57059e, #4a00e0);
+}
+
+.skills .heading {
+  color: #fff;
 }
 
 .skills .heading span {
-    color: rgb(115, 3, 167);
+  color: #FFE600;
 }
 
 .skills .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(27, 27, 27, 0.4);
+  border-radius: 1rem;
 }
 
 .skills .container .bar {
-    flex: 1 1 18rem;
-    padding: 2rem;
-    background: #fff;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border-radius: .5rem;
-    transition: all 0.3s ease;
+  background: #1b1b1b;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+  transition: all 0.3s ease;
+  text-align: center;
 }
 
 .skills .container .bar:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+  transform: translateY(-5px);
 }
 
 .skills .container .bar .info {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .skills .container .bar .info img {
-    width: 4rem;
-    height: 4rem;
-    object-fit: contain;
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
 }
 
 .skills .container .bar .info span {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #333;
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
-    .skills .container .bar {
-        flex: 1 1 100%;
-    }
+  .skills .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .skills .container {
+    grid-template-columns: 1fr;
+  }
 }
 /* skills section ends */
 
