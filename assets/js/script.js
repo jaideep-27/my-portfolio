@@ -108,20 +108,34 @@ async function fetchData(type = "skills") {
     return data;
 }
 
+// fetch skills start
+function getSkills() {
+    return fetch("skills.json")
+        .then(response => response.json())
+        .then(data => {
+            return data;
+        });
+}
+
 function showSkills(skills) {
     let skillsContainer = document.getElementById("skillsContainer");
-    let skillHTML = "";
+    let skillsHTML = "";
     skills.forEach(skill => {
-        skillHTML += `
+        skillsHTML += `
         <div class="bar">
-              <div class="info">
-                <img src=${skill.icon} alt="skill" />
+            <div class="info">
+                <img src="${skill.icon}"/>
                 <span>${skill.name}</span>
-              </div>
-            </div>`
+            </div>
+        </div>`;
     });
-    skillsContainer.innerHTML = skillHTML;
+    skillsContainer.innerHTML = skillsHTML;
 }
+
+getSkills().then(data => {
+    showSkills(data);
+});
+// fetch skills end
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
@@ -164,19 +178,6 @@ function showProjects(projects) {
     srtop.reveal('.work .box', { interval: 200 });
 
 }
-
-// Load skills when document is ready
-$(document).ready(function() {
-    fetchData("skills").then(data => {
-        if (data && data.length > 0) {
-            showSkills(data);
-        } else {
-            console.error("No skills data found");
-        }
-    }).catch(error => {
-        console.error("Error loading skills:", error);
-    });
-});
 
 fetchData("projects").then(data => {
     showProjects(data);
