@@ -1,7 +1,16 @@
 # 🚀 My Portfolio
 
 <div align="center">
-  <h3>🌟 A collection of my work and learning journey 🌟</h3>
+  <img src="assets/images/hero.png" alt="Portfolio Banner" width="100%">
+
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-id/deploy-status)](https://app.netlify.com/sites/your-site/deploys)
+  ![GitHub last commit](https://img.shields.io/github/last-commit/jaideep-27/my-portfolio)
+  ![Website](https://img.shields.io/website?url=https://your-portfolio-url.com)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+  <h3>🌟 A Next-Generation Developer Portfolio Showcasing My Digital Journey 🌟</h3>
+
+  [Live Demo](https://your-portfolio-url.com) | [Report Bug](https://github.com/jaideep-27/my-portfolio/issues) | [Request Feature](https://github.com/jaideep-27/my-portfolio/issues)
 </div>
 
 ## ✨ What's Inside
