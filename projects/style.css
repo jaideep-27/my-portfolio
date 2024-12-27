@@ -156,19 +156,18 @@ header .navbar ul li a:hover{
 /* hamburger icon ends */
 
 /* projects section starts */
-.projects{
-  padding: 6rem 1rem;
-  background: linear-gradient(to bottom, #010136, #00003a);
+.projects {
   min-height: 100vh;
+  padding: 2rem 9%;
 }
-.projects h2{
-  color: #fff;
+.projects h2 {
+  color: #1a1a1a;
   padding: 1rem;
 }
-.projects .heading span{
-  color: rgb(255, 230, 0);
+.projects .heading span {
+  color: rgb(115, 3, 167);
 }
-.projects .button-group{
+.projects .button-group {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -176,22 +175,22 @@ header .navbar ul li a:hover{
   width: 90%;
   justify-content: center;
 }
-.projects .button-group .btn{
+.projects .button-group .btn {
   outline: none;
   padding: 1rem 2rem;
   background: transparent;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #1a1a1a;
+  border: 1px solid rgb(115, 3, 167);
   border-radius: 3px;
   cursor: pointer;
   font-weight: 500;
+  font-size: 1.5rem;
 }
-.projects .button-group .btn.is-checked{
-  background: rgb(255, 230, 0);
-  color: #000;
-  border-color: rgb(255, 230, 0);
+.projects .button-group .btn.is-checked {
+  background: rgb(115, 3, 167);
+  color: #fff;
 }
-.projects .box-container{
+.projects .box-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -199,22 +198,20 @@ header .navbar ul li a:hover{
   width: 90%;
   justify-content: center;
 }
-.projects .box-container .box{
+.projects .box-container .box {
   flex: 1 1 30rem;
   border-radius: 1rem;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
   height: 30rem;
-  background: #fff;
-  max-width: 35rem;
 }
-.projects .box-container .box img{
+.projects .box-container .box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.projects .box-container .box .content{
+.projects .box-container .box .content {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -223,70 +220,107 @@ header .navbar ul li a:hover{
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease;
+}
+.projects .box-container .box .content .tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 2rem;
-  transition: .5s ease;
+  height: 4.5rem;
+  width: 100%;
+  padding-left: 1rem;
+  background: rgb(115, 3, 167);
 }
-.projects .box-container .box:hover .content{
-  top: 0;
-}
-.projects .box-container .box .content .tag{
-  color: #000;
+.projects .box-container .box .content .tag h3 {
   font-size: 2rem;
-  font-weight: 600;
-}
-.projects .box-container .box .content .desc{
-  font-size: 1.6rem;
-  margin: 1rem 0;
-  text-align: center;
-  color: #333;
-}
-.projects .box-container .box .content .btns{
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-.projects .box-container .box .content .btns .btn{
-  padding: 1rem 2rem;
-  background: #333;
   color: #fff;
-  border-radius: 3px;
-  font-size: 1.5rem;
-  transition: .3s ease;
 }
-.projects .box-container .box .content .btns .btn:hover{
-  background: rgb(255, 230, 0);
-  color: #000;
+.projects .box-container .box:hover .content {
+  top: 25%;
 }
-.projects .backbtn{
+.projects .desc {
+  margin: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 4rem;
 }
-.projects .backbtn .btn{
-  padding: 1.5rem 3rem;
-  font-size: 1.6rem;
-  border-radius: 3px;
-  background: rgb(255, 230, 0);
-  color: #000;
-  transition: .3s ease;
+.projects .desc p {
+  font-size: 1.5rem;
 }
-.projects .backbtn .btn:hover{
-  background: #fff;
-  color: #000;
+.projects .desc .btns {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+.projects .desc .btns .btn {
+  line-height: 0;
+  display: inline;
+  padding: 1.5rem 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: rgb(115, 3, 167);
+  margin-right: 2rem;
+}
+.projects .desc .btns .btn:hover {
+  background: #310979;
 }
 
-@media screen and (max-width: 450px) {
-  .projects .button-group{
+.projects .backbtn {
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto 2rem;
+}
+.projects .backbtn .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border: 2px solid rgb(115, 3, 167);
+  background: rgb(115, 3, 167);
+  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  text-align: center;
+  font-size: 1.6rem;
+}
+.projects .backbtn .btn i {
+  margin-right: 0.7rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.projects .backbtn .btn:hover {
+  background: #fff;
+  color: rgb(115, 3, 167);
+}
+.projects .backbtn .btn:hover i {
+  transform: translateX(-5px);
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .projects .box-container {
     width: 100%;
   }
-  .projects .box-container{
-    margin: 0rem;
+}
+
+@media (max-width: 768px) {
+  .projects .box-container .box {
+    flex: 1 1 100%;
+    height: 25rem;
   }
-  .projects .box-container .grid-item .box{
-    width: 95% !important;
+  .projects .button-group {
+    width: 100%;
+  }
+  .projects .button-group .btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.3rem;
   }
 }
+/* projects section ends */
 
 /* back to home button */
 .backbtn{
