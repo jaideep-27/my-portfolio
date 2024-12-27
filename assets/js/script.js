@@ -36,49 +36,12 @@ $(document).ready(function () {
             scrollTop: $($(this).attr('href')).offset().top,
         }, 500, 'linear')
     });
-
-    // <!-- emailjs to mail contact form data -->
-    emailjs.init("prhY2N_tVK3QLdHpd"); // Replace with your actual public key
-
-    $("#contact-form").submit(function (event) {
-      event.preventDefault(); // Prevent the default form submission
-
-      // Sending email using EmailJS
-      emailjs.sendForm('my_portfolio', 'template_j86ih8r', this)
-        .then(() => {
-            console.log("Message sent successfully!");
-            document.getElementById("contact-form").reset();
-            alert("Form Submitted Successfully");
-        })
-        .catch((err) => {
-            console.log('FAILED...', err);
-            alert("Form Submission Failed! Try Again");
-        });
-    });    
-    
-    // <!-- emailjs to mail contact form data
-
-    // Initialize Isotope grid
-    $(document).ready(function() {
-        // Init Isotope
-        var $grid = $('.grid').isotope({
-            itemSelector: '.grid-item',
-            layoutMode: 'fitRows',
-            transitionDuration: '0.6s'
-        });
-
-        // Layout Isotope after each image loads
-        $grid.imagesLoaded().progress(function() {
-            $grid.isotope('layout');
-        });
-    });
-
 });
 
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jaideep Amrabad";
+            document.title = "Portfolio | Nandakishore";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
@@ -86,7 +49,6 @@ document.addEventListener('visibilitychange',
             $("#favicon").attr("href", "assets/images/favhand.png");
         }
     });
-
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
@@ -99,13 +61,14 @@ var typed = new Typed(".typing-text", {
 // <!-- typed js effect ends -->
 
 async function fetchData(type = "skills") {
-    let response
-    type === "skills" ?
-        response = await fetch("skills.json")
-        :
-        response = await fetch("./projects/projects.json")
-    const data = await response.json();
-    return data;
+    try {
+        let response = await fetch(type === "skills" ? "./skills.json" : "./projects/projects.json");
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        return [];
+    }
 }
 
 function showSkills(skills) {
@@ -114,16 +77,14 @@ function showSkills(skills) {
     skills.forEach(skill => {
         skillHTML += `
         <div class="bar">
-              <div class="info">
-                <img src=${skill.icon} alt="skill" />
+            <div class="info">
+                <img src="${skill.icon}" alt="${skill.name}" />
                 <span>${skill.name}</span>
-              </div>
-            </div>`
+            </div>
+        </div>`
     });
     skillsContainer.innerHTML = skillHTML;
 }
-
-// fetch skills end
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
@@ -131,20 +92,20 @@ function showProjects(projects) {
     projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
         projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>`
+            <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+            <div class="content">
+                <div class="tag">
+                    <h3>${project.name}</h3>
+                </div>
+                <div class="desc">
+                    <p>${project.desc}</p>
+                    <div class="btns">
+                        <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
+                        <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>`
     });
     projectsContainer.innerHTML = projectHTML;
 
@@ -152,67 +113,19 @@ function showProjects(projects) {
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
         max: 15,
     });
-    // <!-- tilt js effect ends
+    // <!-- tilt js effect ends -->
+}
 
-    /* ===== SCROLL REVEAL ANIMATION ===== */
-    const srtop = ScrollReveal({
-        origin: 'top',
-        distance: '80px',
-        duration: 1000,
-        reset: true
+// Load skills and projects
+document.addEventListener('DOMContentLoaded', () => {
+    fetchData().then(data => {
+        showSkills(data);
     });
 
-    /* SCROLL PROJECTS */
-    srtop.reveal('.work .box', { interval: 200 });
-
-}
-
-fetchData().then(data => {
-    showSkills(data);
+    fetchData("projects").then(data => {
+        showProjects(data);
+    });
 });
-
-fetchData("projects").then(data => {
-    showProjects(data);
-});
-
-// <!-- tilt js effect starts -->
-VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    max: 15,
-    speed: 400,
-    glare: true,
-    "max-glare": 0.2
-});
-// <!-- tilt js effect ends -->
-
-
-// pre loader start
-// function loader() {
-//     document.querySelector('.loader-container').classList.add('fade-out');
-// }
-// function fadeOut() {
-//     setInterval(loader, 500);
-// }
-// window.onload = fadeOut;
-// pre loader end
-
-// disable developer mode
-document.onkeydown = function (e) {
-    if (e.keyCode == 123) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-        return false;
-    }
-    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-        return false;
-    }
-}
 
 /* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
@@ -242,7 +155,6 @@ srtop.reveal('.about .content p', { delay: 200 });
 srtop.reveal('.about .content .box-container', { delay: 200 });
 srtop.reveal('.about .content .resumebtn', { delay: 200 });
 
-
 /* SCROLL SKILLS */
 srtop.reveal('.skills .container', { interval: 200 });
 srtop.reveal('.skills .container .bar', { delay: 400 });
@@ -260,3 +172,22 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+// disable developer mode
+document.onkeydown = function (e) {
+    if (e.keyCode == 123) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        return false;
+    }
+}
