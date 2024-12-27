@@ -1,9 +1,9 @@
 # 🚀 My Portfolio - Where Creativity Meets Code
 
 <div align="center">
-  ![GitHub last commit](https://img.shields.io/github/last-commit/jaideep-27/my-portfolio)
-  ![Website](https://img.shields.io/website?url=https://jaideep-portfolio.netlify.app/)
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [GitHub last commit](https://img.shields.io/github/last-commit/jaideep-27/my-portfolio)
+  [Website](https://img.shields.io/website?url=https://jaideep-portfolio.netlify.app/)
+  [[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
   <h3>🌟 A Next-Generation Developer Portfolio Showcasing My Digital Journey 🌟</h3>
 
