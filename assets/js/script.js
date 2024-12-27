@@ -99,37 +99,26 @@ var typed = new Typed(".typing-text", {
 // <!-- typed js effect ends
 
 async function fetchData(type = "skills") {
-    try {
-        let response;
-        if (type === "skills") {
-            response = await fetch("../skills.json");
-        } else {
-            response = await fetch("./projects/projects.json");
-        }
-        const data = await response.json();
-        return data;
-    } catch (error) {
-        console.error("Error fetching data:", error);
-        return [];
-    }
+    let response
+    type === "skills" ?
+        response = await fetch("skills.json")
+        :
+        response = await fetch("./projects/projects.json")
+    const data = await response.json();
+    return data;
 }
 
 function showSkills(skills) {
     let skillsContainer = document.getElementById("skillsContainer");
-    if (!skillsContainer) {
-        console.error("Skills container not found!");
-        return;
-    }
-    
     let skillHTML = "";
     skills.forEach(skill => {
         skillHTML += `
         <div class="bar">
-            <div class="info">
-                <img src="${skill.icon}" alt="${skill.name}" draggable="false" />
+              <div class="info">
+                <img src=${skill.icon} alt="skill" />
                 <span>${skill.name}</span>
-            </div>
-        </div>`;
+              </div>
+            </div>`
     });
     skillsContainer.innerHTML = skillHTML;
 }
