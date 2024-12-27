@@ -2,7 +2,7 @@
   {
     "name": "Portfolio Website",
     "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
-    "image": "assets/images/projects/portfolio1.png",
+    "image": "../assets/images/projects/portfolio1.png",
     "category": "basicweb",
     "links": {
       "view": "#",
@@ -12,7 +12,7 @@
   {
     "name": "SkillsetAI",
     "desc": "Skillset AI transforms education with visual learning, gamification, and personalized tools, making learning engaging and effective.",
-    "image": "assets/images/projects/skillset.png",
+    "image": "../assets/images/projects/skillset.png",
     "category": "mern",
     "links": {
       "view": "https://skillset-ai.netlify.app/",
@@ -22,7 +22,7 @@
   {
     "name": "StreamVibe",
     "desc": "A modern video sharing platform built with React, Node.js, MongoDB, and Cloudinary integration.",
-    "image": "assets/images/projects/streamvibe.png",
+    "image": "../assets/images/projects/streamvibe.png",
     "category": "mern",
     "links": {
       "view": "https://streamvibe1.netlify.app/",
@@ -32,7 +32,7 @@
   {
     "name": "Nakshatra Explorers",
     "desc": "A platform to explore the beauty of stars and learn about different constellations and celestial events.",
-    "image": "assets/images/projects/ne.png",
+    "image": "../assets/images/projects/ne.png",
     "category": "basicweb",
     "links": {
       "view": "https://jaideep-27.github.io/Nakshatra_Explorers/",
@@ -42,7 +42,7 @@
   {
     "name": "Dream Path",
     "desc": "An AI web application that helps students find their ideal career path using AI.",
-    "image": "assets/images/projects/dreampath.png",
+    "image": "../assets/images/projects/dreampath.png",
     "category": "basicweb",
     "links": {
       "view": "https://dreampath-cw.my.canva.site/",
@@ -52,7 +52,7 @@
   {
     "name": "EcoCheck",
     "desc": "An application in development.",
-    "image": "assets/images/projects/ecocheck.png",
+    "image": "../assets/images/projects/ecocheck.png",
     "category": "android",
     "links": {
       "view": "#",
