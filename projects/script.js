@@ -44,8 +44,8 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
 });
 
 // Initialize Isotope for filtering
-var $grid = $('.box-container').isotope({
-    itemSelector: '.grid-item',
+var $grid = $('.projects-container').isotope({
+    itemSelector: '.projects-item',
     layoutMode: 'fitRows',
     masonry: {
         columnWidth: 200
