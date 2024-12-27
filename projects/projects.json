@@ -2,7 +2,7 @@
   {
     "name": "Portfolio Website",
     "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
-    "image": "../assets/images/projects/portfolio1.PNG",
+    "image": "../assets/images/projects/portfolio1.png",
     "category": "basicweb",
     "links": {
       "view": "#",
@@ -32,7 +32,7 @@
   {
     "name": "Nakshatra Explorers",
     "desc": "A platform to explore the beauty of stars and learn about different constellations and celestial events.",
-    "image": "../assets/images/projects/ne.PNG",
+    "image": "../assets/images/projects/ne.png",
     "category": "basicweb",
     "links": {
       "view": "https://jaideep-27.github.io/Nakshatra_Explorers/",
@@ -42,7 +42,7 @@
   {
     "name": "Dream Path",
     "desc": "An AI web application that helps students find their ideal career path using AI.",
-    "image": "../assets/images/projects/dreampath.PNG",
+    "image": "../assets/images/projects/dreampath.png",
     "category": "basicweb",
     "links": {
       "view": "https://dreampath-cw.my.canva.site/",
