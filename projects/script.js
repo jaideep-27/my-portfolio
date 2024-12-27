@@ -34,7 +34,7 @@ let projectsContainer = document.querySelector(".work .box-container");
 projectsContainer.innerHTML = `
     <div class="grid-item basicweb">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-            <img draggable="false" src="../assets/images/projects/portfolio1.png" alt="Portfolio Website" />
+            <img draggable="false" src="https://jaideep-portfolio.netlify.app/assets/images/projects/portfolio1.png" alt="Portfolio Website" />
             <div class="content">
                 <div class="tag">
                     <h3>Portfolio Website</h3>
@@ -52,7 +52,7 @@ projectsContainer.innerHTML = `
 
     <div class="grid-item mern">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-            <img draggable="false" src="../assets/images/projects/skillset.png" alt="SkillsetAI" />
+            <img draggable="false" src="https://jaideep-portfolio.netlify.app/assets/images/projects/skillset.png" alt="SkillsetAI" />
             <div class="content">
                 <div class="tag">
                     <h3>SkillsetAI</h3>
@@ -70,7 +70,7 @@ projectsContainer.innerHTML = `
 
     <div class="grid-item mern">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-            <img draggable="false" src="../assets/images/projects/streamvibe.png" alt="StreamVibe" />
+            <img draggable="false" src="https://jaideep-portfolio.netlify.app/assets/images/projects/streamvibe.png" alt="StreamVibe" />
             <div class="content">
                 <div class="tag">
                     <h3>StreamVibe</h3>
@@ -88,7 +88,7 @@ projectsContainer.innerHTML = `
 
     <div class="grid-item basicweb">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-            <img draggable="false" src="../assets/images/projects/ne.png" alt="Nakshatra Explorers" />
+            <img draggable="false" src="https://jaideep-portfolio.netlify.app/assets/images/projects/ne.png" alt="Nakshatra Explorers" />
             <div class="content">
                 <div class="tag">
                     <h3>Nakshatra Explorers</h3>
@@ -106,7 +106,7 @@ projectsContainer.innerHTML = `
 
     <div class="grid-item basicweb">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-            <img draggable="false" src="../assets/images/projects/dreampath.png" alt="Dream Path" />
+            <img draggable="false" src="https://jaideep-portfolio.netlify.app/assets/images/projects/dreampath.png" alt="Dream Path" />
             <div class="content">
                 <div class="tag">
                     <h3>Dream Path</h3>
@@ -124,7 +124,7 @@ projectsContainer.innerHTML = `
 
     <div class="grid-item android">
         <div class="box tilt" style="width: 380px; margin: 1rem">
-            <img draggable="false" src="../assets/images/projects/ecocheck.png" alt="EcoCheck" />
+            <img draggable="false" src="https://jaideep-portfolio.netlify.app/assets/images/projects/ecocheck.png" alt="EcoCheck" />
             <div class="content">
                 <div class="tag">
                     <h3>EcoCheck</h3>
