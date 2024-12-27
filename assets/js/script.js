@@ -99,11 +99,12 @@ var typed = new Typed(".typing-text", {
 // <!-- typed js effect ends
 
 async function fetchData(type = "skills") {
-    let response
-    type === "skills" ?
-        response = await fetch("skills.json")
-        :
-        response = await fetch("./projects/projects.json")
+    let response;
+    if (type === "skills") {
+        response = await fetch("./skills.json");
+    } else {
+        response = await fetch("./projects/projects.json");
+    }
     const data = await response.json();
     return data;
 }
@@ -114,11 +115,11 @@ function showSkills(skills) {
     skills.forEach(skill => {
         skillHTML += `
         <div class="bar">
-              <div class="info">
-                <img src=${skill.icon} alt="skill" />
+            <div class="info">
+                <img src="${skill.icon}" alt="skill" />
                 <span>${skill.name}</span>
-              </div>
-            </div>`
+            </div>
+        </div>`;
     });
     skillsContainer.innerHTML = skillHTML;
 }
@@ -165,8 +166,11 @@ function showProjects(projects) {
 
 }
 
-fetchData().then(data => {
-    showSkills(data);
+// Load skills when document is ready
+$(document).ready(function() {
+    fetchData().then(data => {
+        showSkills(data);
+    });
 });
 
 fetchData("projects").then(data => {
