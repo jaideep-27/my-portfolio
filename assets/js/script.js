@@ -42,7 +42,7 @@ $(document).ready(function () {
 
     $("#contact-form").submit(function (event) {
       event.preventDefault(); // Prevent the default form submission
-  
+
       // Sending email using EmailJS
       emailjs.sendForm('my_portfolio', 'template_j86ih8r', this)
         .then(() => {
@@ -56,7 +56,22 @@ $(document).ready(function () {
         });
     });    
     
-    // <!-- emailjs to mail contact form data -->
+    // <!-- emailjs to mail contact form data
+
+    // Initialize Isotope grid
+    $(document).ready(function() {
+        // Init Isotope
+        var $grid = $('.grid').isotope({
+            itemSelector: '.grid-item',
+            layoutMode: 'fitRows',
+            transitionDuration: '0.6s'
+        });
+
+        // Layout Isotope after each image loads
+        $grid.imagesLoaded().progress(function() {
+            $grid.isotope('layout');
+        });
+    });
 
 });
 
@@ -81,7 +96,7 @@ var typed = new Typed(".typing-text", {
     backSpeed: 25,
     backDelay: 500,
 });
-// <!-- typed js effect ends -->
+// <!-- typed js effect ends
 
 async function fetchData(type = "skills") {
     let response
@@ -135,7 +150,7 @@ function showProjects(projects) {
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
         max: 15,
     });
-    // <!-- tilt js effect ends -->
+    // <!-- tilt js effect ends
 
     /* ===== SCROLL REVEAL ANIMATION ===== */
     const srtop = ScrollReveal({
@@ -161,6 +176,9 @@ fetchData("projects").then(data => {
 // <!-- tilt js effect starts -->
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2
 });
 // <!-- tilt js effect ends -->
 

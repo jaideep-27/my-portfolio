@@ -38,26 +38,35 @@ document.addEventListener('visibilitychange', function () {
     }
 });
 
+// Initialize Isotope grid
+$(document).ready(function() {
+    // Init Isotope
+    var $grid = $('.grid').isotope({
+        itemSelector: '.grid-item',
+        layoutMode: 'fitRows',
+        transitionDuration: '0.6s'
+    });
+
+    // Filter items on button click
+    $('.button-group').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $('.button-group .btn').removeClass('is-checked');
+        $(this).addClass('is-checked');
+        $grid.isotope({ filter: filterValue });
+    });
+
+    // Layout Isotope after each image loads
+    $grid.imagesLoaded().progress(function() {
+        $grid.isotope('layout');
+    });
+});
+
 // Initialize Vanilla Tilt
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    max: 20,
-});
-
-// Initialize Isotope for filtering
-var $grid = $('.projects-container').isotope({
-    itemSelector: '.projects-item',
-    layoutMode: 'fitRows',
-    masonry: {
-        columnWidth: 200
-    }
-});
-
-// Filter items on button click
-$('.button-group').on('click', 'button', function() {
-    $('.button-group').find('.is-checked').removeClass('is-checked');
-    $(this).addClass('is-checked');
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2
 });
 
 // Disable developer tools shortcuts

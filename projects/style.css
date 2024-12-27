@@ -167,78 +167,95 @@ header .navbar ul li a:hover{
 .projects .heading span {
   color: rgb(115, 3, 167);
 }
-.projects .button-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 2rem auto;
-  width: 90%;
-  justify-content: center;
-}
-.projects .button-group .btn {
-  outline: none;
-  padding: 1rem 2rem;
-  background: transparent;
-  color: #1a1a1a;
-  border: 1px solid rgb(115, 3, 167);
-  border-radius: 3px;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 1.5rem;
-}
-.projects .button-group .btn.is-checked {
-  background: rgb(115, 3, 167);
-  color: #fff;
-}
 .projects .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin: 2rem auto;
-  width: 90%;
-  justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin: 2rem auto;
+    width: 90%;
+    justify-content: center;
 }
-.projects .box-container .box {
-  flex: 1 1 30rem;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-  height: 30rem;
+
+.projects .box-container .grid-item {
+    flex: 1 1 30rem;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: calc(33.333% - 2rem);
 }
-.projects .box-container .box img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
+
+.projects .box-container .grid-item .box {
+    position: relative;
+    height: 30rem;
+    overflow: hidden;
+    background: #fff;
 }
-.projects .box-container .box .content {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 85%;
-  left: 0;
-  background: rgba(255, 255, 255, 0.9);
-  display: flex;
-  flex-direction: column;
-  transition: all 0.3s ease;
+
+.projects .box-container .grid-item .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.projects .box-container .box .content .tag {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 4.5rem;
-  width: 100%;
-  padding-left: 1rem;
-  background: rgb(115, 3, 167);
+
+.projects .box-container .grid-item .box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
 }
-.projects .box-container .box .content .tag h3 {
-  font-size: 2rem;
-  color: #fff;
+
+.projects .box-container .grid-item .box:hover .content {
+    transform: translateY(0%);
 }
-.projects .box-container .box:hover .content {
-  top: 25%;
+
+.projects .button-group {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
 }
+
+.projects .button-group .btn {
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+}
+
+.projects .button-group .btn.is-checked {
+    background: var(--hover-color);
+}
+
+@media (max-width: 1200px) {
+    .projects .box-container .grid-item {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .projects .box-container .grid-item {
+        width: calc(100% - 2rem);
+    }
+}
+
 .projects .desc {
   margin: 2rem;
   display: flex;
