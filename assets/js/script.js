@@ -41,7 +41,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Nandakishore";
+            document.title = "Portfolio | Jaideep Amrabad";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
