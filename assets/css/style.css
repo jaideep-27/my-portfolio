@@ -640,47 +640,48 @@ header .navbar ul li a:hover {
 /* education section ends */
 
 /* work section starts */
-.work {
+.work{
   /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  min-height: 100vh;
+  padding: 2rem 9%;
 }
-.work h2 {
-  color: #fff;
+.work h2{
+  color: #1a1a1a;
   padding: 1rem;
 }
-.work .heading span {
-  color: rgb(255, 230, 0);
+.work .heading span{
+  color: rgb(115, 3, 167);
 }
-.work .box-container {
+.work .box-container{
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap:1.5rem;
   margin: 2rem;
 }
-.work .box-container .box {
-  flex: 1 1 30rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+.work .box-container .box{
+  flex:1 1 30rem;
+  border-radius: 1rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
   position: relative;
-  overflow: hidden;
-  height: 30rem;
+  overflow:hidden;
+  height:30rem;
 }
-.work .box-container .box img {
+.work .box-container .box img{
   height: 100%;
-  width: 100%;
+  width:100%;
   object-fit: cover;
 }
-.work .box-container .box .content {
+.work .box-container .box .content{
   height: 100%;
-  width: 100%;
+  width:100%;
   position: absolute;
-  top: 85%;
-  left: 0;
-  background: rgba(255, 255, 255, 0.9);
+  top:85%;
+  left:0;
+  background:rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
 }
-.work .box-container .box .content .tag {
+.work .box-container .box .content .tag{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -688,12 +689,13 @@ header .navbar ul li a:hover {
   height: 4.5rem;
   width: 100%;
   padding-left: 1rem;
-  background: #ffd900;
+  background: rgb(115, 3, 167);
 }
-.work .box-container .box .content .tag h3 {
+.work .box-container .box .content .tag h3{
   font-size: 2rem;
+  color: #fff;
 }
-.work .box-container .box:hover .content {
+.work .box-container .box:hover .content{
   top: 25%;
 }
 .work .desc {
@@ -702,29 +704,30 @@ header .navbar ul li a:hover {
   flex-direction: column;
   justify-content: center;
 }
-.work .desc p {
+.work .desc p{
   font-size: 1.5rem;
 }
-.work .desc .btns {
+.work .desc .btns{
   display: flex;
   justify-content: space-between;
   width: 100%;
   margin-top: 2rem;
 }
-.work .desc .btns .btn {
+.work .desc .btns .btn{
   line-height: 0;
   display: inline;
   padding: 1.5rem 2.5rem;
-  border-radius: 0.5rem;
+  border-radius: .5rem;
   font-size: 1.5rem;
   color: #fff;
-  background: rgb(12, 12, 12);
+  background: rgb(115, 3, 167);
   margin-right: 2rem;
 }
-.work .desc .btns .btn:hover {
-  background: #310ae0f5;
+.work .desc .btns .btn:hover{
+  background: #310979;
 }
-.work .viewall {
+
+.work .viewall{
   display: flex;
   justify-content: center;
 }
@@ -732,7 +735,7 @@ header .navbar ul li a:hover {
   position: relative;
   line-height: 0;
   padding: 1.6rem 3rem;
-  border-radius: 0.5em;
+  border-radius: .5em;
   transition: 0.5s;
   color: rgb(255, 255, 255);
   font-weight: 700;
@@ -743,31 +746,21 @@ header .navbar ul li a:hover {
 .work .viewall .btn span {
   font-weight: 600;
   font-size: 1.7rem;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 .work .viewall .btn i {
   margin-left: 0.3rem;
   font-size: 1.5rem;
   transition: 0.3s;
 }
-.work .viewall .btn:hover {
+.work .viewall .btn:hover{
   background: #fff;
   color: #000;
 }
 .work .viewall .btn:hover i {
   transform: translateX(5px);
 }
-
-@media (max-width: 768px) {
-  .work .box-container .box {
-    flex: 1 1 100%; /* Full width on smaller screens */
-    height: auto; /* Allow height to adjust */
-  }
-}
-
-
 /* work section ends */
-
 /* experience section starts */
 .experience .timeline {
   position: relative;
