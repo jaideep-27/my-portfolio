@@ -2181,23 +2181,29 @@ footer {
 
 /* Mobile specific fixes for contact form */
 @media (max-width: 768px) {
-  /* Remove icons completely in mobile view */
-  form i {
-    display: none;
+  /* Completely hide icons in mobile view */
+  .field i, 
+  .message i {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    z-index: -999 !important;
+    pointer-events: none !important;
   }
   
   /* Adjust padding since icons are gone */
   form .field input,
   form .message textarea {
-    padding: 0 16px;
+    padding: 0 16px !important;
   }
   
   form .field input:focus,
   form .message textarea:focus {
-    padding: 0 16px;
+    padding: 0 16px !important;
   }
   
   form .message textarea {
-    padding: 10px 16px;
+    padding: 10px 16px !important;
   }
 }
