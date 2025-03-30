@@ -1390,12 +1390,6 @@ section::after {
   width: 100%;
 }
 
-form .form-group {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .form-group .field {
   height: 50px;
   display: flex;
@@ -2097,41 +2091,33 @@ footer {
 /* Fix for experience section in mobile layout */
 @media (max-width: 768px) {
   .experience .timeline {
+    padding: 0;
+    width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 2rem;
+  }
+  
+  .experience .timeline::after {
+    left: 30px;
   }
   
   .experience .container {
-    margin: 2rem 0;
-    position: relative;
+    width: calc(100% - 60px);
+    padding-left: 60px;
+    padding-right: 0;
+    margin: 2rem auto;
   }
   
   .experience .container::after {
-    background-color: var(--primary-color);
-    color: #fff;
-    width: 2.5rem;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    font-size: 1.4rem;
-    left: -3.5rem;
-    top: 0.5rem;
-    box-shadow: 0 0 10px rgba(98, 71, 255, 0.7);
+    left: 15px;
   }
   
-  /* Ensure text is properly aligned and spaced */
-  .experience .container .content {
-    width: 100%;
-    padding: 1.5rem;
+  .experience .container::before {
+    left: 60px;
   }
   
-  .experience .container .content h3 {
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .experience .container .content p {
-    font-size: 1.4rem;
+  .experience .right {
+    left: 0;
   }
 }
 
@@ -2189,5 +2175,66 @@ footer {
   .contact h2.heading {
     text-align: center;
     margin-bottom: 2rem;
+  }
+}
+
+/* Mobile specific fixes for contact form */
+@media (max-width: 768px) {
+  /* Fix for the field icons overlapping text */
+  .form-group .field {
+    height: 50px;
+    margin: 1.2rem 0;
+  }
+  
+  form .field input,
+  form .message textarea {
+    padding: 0 16px 0 50px;
+    font-size: 15px;
+  }
+  
+  form i {
+    left: 18px;
+    font-size: 16px;
+  }
+  
+  /* Fix for message textarea */
+  form .message {
+    margin: 1.2rem 0;
+  }
+  
+  form .message textarea {
+    padding-top: 12px;
+    min-height: 120px;
+  }
+  
+  form .message i {
+    top: 16px;
+  }
+  
+  .contact .content .field input, 
+  .contact .content .message textarea {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+
+  [data-theme="dark"] .contact .content .field input, 
+  [data-theme="dark"] .contact .content .message textarea {
+    background-color: rgba(30, 30, 40, 0.9);
+  }
+  
+  /* Center the form container better */
+  .contact .container {
+    max-width: 95%;
+    margin: 2rem auto;
+  }
+  
+  .contact .container .content {
+    justify-content: center;
+    padding: 2rem 1rem;
+  }
+  
+  .contact .content .form-container {
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
