@@ -2181,17 +2181,23 @@ footer {
 
 /* Mobile specific fixes for contact form */
 @media (max-width: 768px) {
-  /* Simple fix to make mobile inputs match desktop */
+  /* Remove icons completely in mobile view */
+  form i {
+    display: none;
+  }
+  
+  /* Adjust padding since icons are gone */
   form .field input,
   form .message textarea {
-    padding: 0 16px 0 50px;
+    padding: 0 16px;
   }
   
-  form i {
-    left: 15px;
+  form .field input:focus,
+  form .message textarea:focus {
+    padding: 0 16px;
   }
   
   form .message textarea {
-    padding: 10px 16px 0 50px;
+    padding: 10px 16px;
   }
 }
