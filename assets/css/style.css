@@ -2093,3 +2093,101 @@ footer {
     padding: 1rem;
   }
 }
+
+/* Fix for experience section in mobile layout */
+@media (max-width: 768px) {
+  .experience .timeline {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .experience .container {
+    margin: 2rem 0;
+    position: relative;
+  }
+  
+  .experience .container::after {
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    left: -3.5rem;
+    top: 0.5rem;
+    box-shadow: 0 0 10px rgba(98, 71, 255, 0.7);
+  }
+  
+  /* Ensure text is properly aligned and spaced */
+  .experience .container .content {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  
+  .experience .container .content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .experience .container .content p {
+    font-size: 1.4rem;
+  }
+}
+
+/* Fix for Get In Touch section in mobile layout */
+@media (max-width: 768px) {
+  .contact .container {
+    max-width: 100%;
+    padding: 2rem 1rem;
+  }
+  
+  .contact .container .content {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .contact .content .form-container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 95%;
+  }
+  
+  .contact .content form {
+    width: 100%;
+  }
+  
+  .contact .content .image-box {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Center the form elements better */
+  .contact .content .field input, 
+  .contact .content .message textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+  }
+  
+  /* Center the submit button */
+  .contact .content .button-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  /* Center the response message */
+  #response-message {
+    width: 100%;
+    margin: 2rem auto 0;
+  }
+  
+  /* Fix the heading alignment */
+  .contact h2.heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}
