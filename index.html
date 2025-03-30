@@ -17,9 +17,14 @@
 <body oncontextmenu="return false">
 
 <!-- pre loader -->
-<!--<div class="loader-container">
-  <img draggable="false" src="./assets/images/preloader.gif" alt="">
-</div>-->
+<div class="loader-container">
+  <div class="loader">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+  </div>
+</div>
 
 <!-- navbar starts -->
 <header>
@@ -27,6 +32,7 @@
 
         <div id="menu" class="fas fa-bars"></div>
         <nav class="navbar">
+            <div id="close-navbar" class="fas fa-times"></div>
             <ul>
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -35,6 +41,13 @@
             <li><a href="#work">Projects</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li>
+                <div class="theme-toggle">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </li>
             </ul>
         </nav>
 </header>
@@ -82,26 +95,22 @@
         <h3>I'm Jaideep</h3>
         <span class="tag">Full Stack Developer</span>
         
-        <p>I am a Full-Stack developer based in Hyderabad, India. 
-          I am a Computer Science and Engineering undergraduate.
-          I am very passionate about improving my coding skills & developing applications & websites.
-          I build WebApps and Websites using MERN Stack.
-          Working for myself to improve my skills.
-          Love to build Full-Stack clones. </p>
+        <p>I am a Full-Stack Developer based in Hyderabad, India. 
+          I am a Computer Science and Engineering undergraduate at Nalla Narasimha Reddy College of Engineering with a CGPA of 9.25.
+          I specialize in building dynamic web applications using React.js and the MERN stack.
+          I'm also proficient in Machine Learning and Generative AI, leveraging TensorFlow to develop scalable models.
+          My expertise extends to Cloud Computing, optimizing app performance with AWS, Firebase, Azure, and Google Cloud.
+          I'm passionate about creating innovative solutions that combine cutting-edge technology with exceptional user experiences.</p>
 
         <div class="box-container">
-            <!-- <div class="box">
-              <p><span> age: </span> 20</p>
-              <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
-            </div> -->
             <div class="box">
               <p><span> email : </span> amrabadjaideep@gmail.com</p>
-              <p><span> place : </span> Hyderabad, India - 500035</p>
+              <p><span> place : </span> Hyderabad, Telangana - 500035</p>
             </div>
         </div>
         
         <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1rA22No_VnVPvPlhlIhlgC6OOyLviOhIZ/view?usp=drive_link" target="_blank" class="btn"><span>Resume</span>
+            <a href="https://drive.google.com/file/d/1p3ZgSEXimCUHXI4k8kYlDuUirBHPAYin/view?usp=drivesdk" target="_blank" class="btn"><span>Resume</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -165,70 +174,41 @@
 <section class="projects" id="work">
     <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
 
-    <div class="box-container grid">
-        <!-- Portfolio Website -->
-        <div class="grid-item basicweb">
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/portfolio1.png" alt="portfolio" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>Portfolio Website</h3>
-                    </div>
-                    <div class="desc">
-                        <p>Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!</p>
-                        <div class="btns">
-                            <a href="#" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/jaideep-27/my-portfolio" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="project-grid">
         <!-- SkillsetAI -->
-        <div class="grid-item mern">
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/skillset.png" alt="skillset" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>SkillsetAI</h3>
-                    </div>
-                    <div class="desc">
-                        <p>Skillset AI transforms education with visual learning, gamification, and personalized tools, making learning engaging and effective.</p>
-                        <div class="btns">
-                            <a href="https://skillset-ai.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/jaideep-27/skillset-ai" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
+        <div class="project-card" onclick="window.open('https://skillset-ai.netlify.app/', '_blank')">
+            <div class="project-image">
+                <img src="./assets/images/projects/skillset.png" alt="SkillsetAI" />
+            </div>
+            <div class="project-content">
+                <h3>SkillsetAI</h3>
+                <p>An AI-powered tutoring system leveraging Machine Learning to generate personalized study plans. Features gamification elements like quizzes and leaderboards to increase engagement and course completion rates.</p>
             </div>
         </div>
 
-        <!-- StreamVibe -->
-        <div class="grid-item mern">
-            <div class="box tilt">
-                <img draggable="false" src="./assets/images/projects/streamvibe.png" alt="streamvibe" />
-                <div class="content">
-                    <div class="tag">
-                        <h3>StreamVibe</h3>
-                    </div>
-                    <div class="desc">
-                        <p>A modern video sharing platform built with React, Node.js, MongoDB, and Cloudinary integration.</p>
-                        <div class="btns">
-                            <a href="https://streamvibe1.netlify.app/" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
-                            <a href="https://github.com/jaideep-27/streamvibe" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-                        </div>
-                    </div>
-                </div>
+        <!-- EcoCheck App -->
+        <div class="project-card" onclick="window.open('#', '_blank')">
+            <div class="project-image">
+                <img src="./assets/images/projects/ecocheck.png" alt="EcoCheck App" />
+            </div>
+            <div class="project-content">
+                <h3>EcoCheck App</h3>
+                <p>React Native app with Firebase integration for tracking environmental impact. Features EcoScore tracking system, leaderboards, and eco-friendly product shopping to promote sustainable lifestyles.</p>
+            </div>
+        </div>
+
+        <!-- Nakshatra Explorers -->
+        <div class="project-card" onclick="window.open('#', '_blank')">
+            <div class="project-image">
+                <img src="./assets/images/projects/nakshatra.png" alt="Nakshatra Explorers" />
+            </div>
+            <div class="project-content">
+                <h3>Nakshatra Explorers</h3>
+                <p>A space exploration-themed website built with MERN stack, providing interactive content on spaceflight and astronomy with real-time updates on space missions and discoveries.</p>
             </div>
         </div>
     </div>
 
-    <div class="viewall">
-        <a href="./projects/index.html" class="btn"><span>View All</span>
-            <i class="fas fa-arrow-right"></i>
-        </a>
-    </div>
 </section>
 <!-- work project section ends -->
 
@@ -243,11 +223,11 @@
     <div class="container left">
       <div class="content">
         <div class="tag">
-          <h2>Innovate Intern</h2>
+          <h2>Intellikraft Solutions (SkillCef)</h2>
         </div>
         <div class="desc">
-            <h3>Web Developer | Internship</h3>
-            <p>November 2024 - Present</p>
+            <h3>AI/ML Full Stack Intern</h3>
+            <p>February 2025 - Present</p>
         </div>
       </div>
     </div>
@@ -255,11 +235,11 @@
     <div class="container right">
       <div class="content">
         <div class="tag">
-          <h2>Oasis Infobyte</h2>
+          <h2>EY GDS - AICTE</h2>
         </div>
         <div class="desc">
-            <h3>Website Developer | Internship</h3>
-            <p>September 2024 - October 2024</p>
+            <h3>Full Stack Development Intern</h3>
+            <p>December 2024 - January 2025</p>
         </div>
       </div>
     </div>
@@ -267,11 +247,11 @@
     <div class="container left">
       <div class="content">
         <div class="tag">
-          <h2>Pexilim</h2>
+          <h2>Microsoft & SAP - AICTE</h2>
         </div>
         <div class="desc">
-            <h3>Content Writer | Internship</h3>
-            <p>July 2024 - October 2024</p>
+            <h3>Artificial Intelligence Intern</h3>
+            <p>November 2024 - December 2024</p>
         </div>
       </div>
     </div>
@@ -279,22 +259,16 @@
     <div class="container right">
       <div class="content">
         <div class="tag">
-          <h2>Guidofie</h2>
+          <h2>Pexilim</h2>
         </div>
         <div class="desc">
-            <h3>Translator | Internship</h3>
-            <p>July 2024 - August 2024</p>
+            <h3>Content Writer</h3>
+            <p>July 2024 - September 2024</p>
         </div>
       </div>
     </div>
 
-  <div class="morebtn">
-    <a href="/experience" class="btn"><span>View All</span>
-      <i class="fas fa-arrow-right"></i>
-  </a>
   </div>
-
-</div>
 
 </section>
 <!-- experience section ends -->
@@ -308,32 +282,34 @@
       <div class="image-box">
         <img draggable="false" src="./assets/images/contact1.png" alt="">
       </div>
-      <form id="contact-form">
-        <div class="form-group">
-          <div class="field">
-            <input type="text" name="name" placeholder="Name" required>
-            <i class='fas fa-user'></i>
+      <div class="form-container">
+        <form id="contact-form">
+          <div class="form-group">
+            <div class="field">
+              <input type="text" name="name" placeholder="Name" required>
+              <i class='fas fa-user'></i>
+            </div>
+            <div class="field">
+              <input type="email" name="email" placeholder="Email" required>
+              <i class='fas fa-envelope'></i>
+            </div>
+            <div class="field">
+              <input type="text" name="phone" placeholder="Phone">
+              <i class='fas fa-phone-alt'></i>
+            </div>
+            <div class="message">
+              <textarea placeholder="Message" name="message" required></textarea>
+              <i class="fas fa-comment-dots"></i>
+            </div>
           </div>
-          <div class="field">
-            <input type="email" name="email" placeholder="Email" required>
-            <i class='fas fa-envelope'></i>
+          <div class="button-area">
+            <button type="submit">
+              Submit
+            </button>
           </div>
-          <div class="field">
-            <input type="text" name="phone" placeholder="Phone">
-            <i class='fas fa-phone-alt'></i>
-          </div>
-          <div class="message">
-            <textarea placeholder="Message" name="message" required></textarea>
-            <i class="fas fa-comment-dots"></i>
-          </div>
-        </div>
-        <div class="button-area">
-          <button type="submit">
-            Submit <i class="fa fa-paper-plane"></i>
-          </button>
-        </div>
-      </form>
-      <div id="response-message"></div> <!-- For displaying success/error messages -->
+        </form>
+        <div id="response-message"></div>
+      </div>
     </div>
   </div>
 </section>
@@ -348,7 +324,7 @@
 
       <div class="box">
           <h3>Jaideep's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising </p>
+          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀</p>
       </div>
 
       <div class="box">
@@ -409,6 +385,9 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
+
+<!-- imagesLoaded Plugin -->
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 <!-- isotope js -->
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>

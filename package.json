@@ -1,0 +1,22 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website showcasing projects and skills",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve",
+    "dev": "serve",
+    "build": "echo 'No build step required for static site'"
+  },
+  "keywords": [
+    "portfolio",
+    "personal",
+    "website",
+    "developer"
+  ],
+  "author": "Amara",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+} 
