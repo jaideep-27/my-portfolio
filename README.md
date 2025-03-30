@@ -1,165 +1,161 @@
-# 🚀 My Portfolio
+# 🚀 Jaideep's Portfolio
 
 <div align="center">
-  <img src="assets/images/hero.png" alt="Portfolio Banner" width="100%">
+  <img src="assets/images/hero.png" alt="Portfolio Banner" width="80%">
 
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-id/deploy-status)](https://app.netlify.com/sites/your-site/deploys)
-  ![GitHub last commit](https://img.shields.io/github/last-commit/jaideep-27/my-portfolio)
-  ![Website](https://img.shields.io/website?url=https://your-portfolio-url.com)
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/netlify-id/deploy-status)](https://app.netlify.com/sites/jaideep-portfolio/deploys)
+  ![GitHub last commit](https://img.shields.io/github/last-commit/jaideep-27/portfolio?style=flat-square)
+  ![Website](https://img.shields.io/website?style=flat-square&url=https://jaideep-portfolio.netlify.app/)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-  <h3>🌟 A Next-Generation Developer Portfolio Showcasing My Digital Journey 🌟</h3>
+  <h3>🌟 A Modern Full Stack Developer Portfolio Showcasing My Digital Journey 🌟</h3>
 
-  [Live Demo](https://your-portfolio-url.com) | [Report Bug](https://github.com/jaideep-27/my-portfolio/issues) | [Request Feature](https://github.com/jaideep-27/my-portfolio/issues)
+  [✨ Live Demo](https://jaideep-portfolio.netlify.app/) | [🐛 Report Bug](https://github.com/jaideep-27/portfolio/issues) | [🔥 Request Feature](https://github.com/jaideep-27/portfolio/issues)
 </div>
 
-## ✨ What's Inside
+## ✨ Portfolio Highlights
 
-- 🎯 **Projects** - Things I've built while learning
-- 🎨 **Design** - Keeping it clean and simple
-- 💡 **Skills** - Technologies I'm learning
-- 📱 **Responsive** - Works on all devices
-- ⚡ **Performance** - Keeping it quick and light
-- 🌐 **SEO** - Easy to find
+| 📚 Feature | 🔍 Description |
+|------------|---------------|
+| 💼 **Projects** | Showcase of my full-stack, ML, and AI projects with live demos |
+| 🎓 **Experience** | Timeline of my professional journey and internships |
+| 🛠️ **Skills** | Comprehensive display of technologies I've mastered |
+| 📱 **Responsive Design** | Seamlessly works across all devices and screen sizes |
+| 🎨 **Dark/Light Mode** | Toggle between themes based on preference |
+| 📬 **Contact Form** | Direct communication channel integrated with EmailJS |
 
 ## 🛠️ Built With
 
-- ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-- ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-- ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-- ![Responsive Design](https://img.shields.io/badge/Responsive-Design-blue?style=flat)
-- ![Modern UI](https://img.shields.io/badge/Modern-UI-green?style=flat)
+<div align="center">
 
-## 🎯 Features
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+![EmailJS](https://img.shields.io/badge/EmailJS-2a9d8f?style=for-the-badge&logo=gmail&logoColor=white)
+![Particles.js](https://img.shields.io/badge/Particles.js-8A2BE2?style=for-the-badge&logo=javascript&logoColor=white)
 
-### 1. 💼 Project Section
-- Simple grid layout
-- Category filters
-- Project previews
-- Code links
+</div>
 
-### 2. 🎨 Design Elements
-- Smooth scrolling
-- Light/dark modes
-- Simple animations
-- Clean layout
+## 🚀 Key Features
 
-### 3. 📱 Responsive Design
-- Mobile-friendly
-- Easy reading
-- Touch-ready
-- Fast loading
+### 1. 💼 Interactive Project Section
+- Responsive project grid with hover effects
+- Detailed project descriptions
+- Live demo links for hands-on exploration
+- GitHub links for code access
 
-### 4. ⚡ Performance
-- Optimized images
-- Clean code
-- Quick loading
-- Browser caching
+### 2. 🎨 Modern UI/UX Design
+- Intuitive navigation with smooth scrolling
+- Toggle between light and dark themes
+- Subtle animations and transitions
+- Clean, minimalist layout for better focus
 
-## 🚀 Setup
+### 3. 📊 Dynamic Skills Display
+- Visual representation of technical expertise
+- Categorized by domain (Frontend, Backend, etc.)
+- Auto-populated from JSON data
+
+### 4. 📱 Responsive Design
+- Mobile-first approach ensuring perfect display on all devices
+- Optimized images and assets for faster loading
+- Specially designed mobile navigation menu
+
+## 🔧 Quick Setup
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/jaideep-27/my-portfolio.git
+   git clone https://github.com/jaideep-27/portfolio.git
    ```
 
-2. **Navigate to project**
+2. **Navigate to project folder**
    ```bash
-   cd my-portfolio
+   cd portfolio
    ```
 
-3. **Open in browser**
+3. **Open with Live Server**
    ```bash
-   # Using VS Code Live Server
-   # Or simply open index.html
+   # Using VS Code? Install Live Server extension
+   # and click "Go Live" in the status bar
+   # Or simply open index.html in your browser
    ```
 
 ## 📂 Project Structure
 
 ```
-my-portfolio/
-├── assets/
-│   ├── css/
-│   ├── js/
-│   └── images/
-├── experience/
-├── projects/
-├── index.html
-└── README.md
+portfolio/
+├── assets/               # Static resources
+│   ├── css/              # Stylesheets
+│   │   └── style.css     # Main stylesheet
+│   ├── js/               # JavaScript files
+│   │   └── script.js     # Main JavaScript
+│   └── images/           # Images and icons
+├── skills.json           # Skills data
+├── index.html            # Main HTML file
+└── README.md             # Project documentation
 ```
 
-## 💫 Features In Detail
+## 🎭 Theme Customization
 
-### Project Cards
-- Simple hover effects
-- Category sorting
-- Demo links
-- Code links
+The portfolio includes a dynamic theme switcher allowing:
 
-### Interactive Elements
-- Smooth scrolling
-- Theme switching
-- Progress indicators
-- Contact form
+- 🌞 **Light Mode**: Clean, bright interface
+- 🌙 **Dark Mode**: Easy on the eyes for night viewing
+- 💾 **Theme Persistence**: Your preference is saved for future visits
 
-### Performance
-- Small images
-- Clean code
-- Fast loading
-- Browser caching
+## 📱 Responsive Across Devices
 
-## 📱 Works On
+<div align="center">
 
-- 📱 Phones
-- 💻 Tablets
-- 🖥️ Computers
-- 📺 Large screens
+| 📱 Mobile | 💻 Tablet | 🖥️ Desktop |
+|-----------|-----------|------------|
+| Optimized navigation | Fluid layouts | Full-featured experience |
+| Touch-friendly elements | Balanced content display | Enhanced visual effects |
+| Fast loading | Adaptive UI | Immersive animations |
 
-## 🎨 Colors
+</div>
 
-- Primary: `#007bff`
-- Secondary: `#6c757d`
-- Accent: `#28a745`
-- Background: `#ffffff`
-- Text: `#212529`
+## 🎨 Color Scheme
 
-## 🔧 Customization
+| Element | Light Mode | Dark Mode |
+|---------|------------|-----------|
+| Background | `#ffffff` | `#0a0a0f` |
+| Primary | `#6247ff` | `#7c4dff` |
+| Text | `#1e1e2c` | `#ffffff` |
+| Accent | `#ff7730` | `#ff9d5c` |
 
-1. **Colors**: Check `assets/css/style.css`
-2. **Content**: Edit `projects/projects.json`
-3. **Images**: Update `assets/images/`
-4. **Text**: Change `index.html`
+## 🚀 Deployment
 
-## 📈 Future Ideas
+This site is hosted on Netlify with continuous deployment from the main branch.
 
-- [ ] Blog section
-- [ ] Offline support
-- [ ] More projects
-- [ ] Better accessibility
-- [ ] More categories
+## 🤝 Contributing
 
-## 🤝 Contributions
+Contributions are welcome! Here's how:
 
-Feel free to:
-1. Fork it
-2. Create a branch
-3. Make changes
-4. Send a pull request
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## 📄 License
 
-MIT License - feel free to use
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📬 Contact
 
-Live Site: [https://jaideep-portfolio.netlify.app/](https://jaideep-portfolio.netlify.app/)
+Jaideep Amrabad - [amrabadjaideep@gmail.com](mailto:amrabadjaideep@gmail.com)
 
-Code: [https://github.com/jaideep-27/my-portfolio](https://github.com/jaideep-27/my-portfolio)
+Portfolio: [https://jaideep-portfolio.netlify.app/](https://jaideep-portfolio.netlify.app/)
+
+GitHub: [https://github.com/jaideep-27](https://github.com/jaideep-27)
+
+LinkedIn: [https://www.linkedin.com/in/jaideep-amrabad](https://www.linkedin.com/in/jaideep-amrabad)
 
 ---
 
 <div align="center">
-  Made with ❤️ by Jaideep
-  <br>
-  Star ⭐ if you found this helpful!
+  <img src="assets/images/favicon.png" alt="Logo" width="80px" height="80px">
+  <p>Designed & Built with ❤️ by Jaideep</p>
+  <p>⭐ Star this repository if you found it helpful! ⭐</p>
 </div>
