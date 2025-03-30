@@ -1398,14 +1398,16 @@ section::after {
   width: 100%;
 }
 
+/* Base icon styling */
 form i {
   position: absolute;
   top: 50%;
-  left: 18px;
+  left: 15px;
   color: var(--text-color);
   font-size: 17px;
   pointer-events: none;
   transform: translateY(-50%);
+  z-index: 1;
 }
 
 form .field input,
@@ -1445,8 +1447,7 @@ form .message {
 
 form .message i {
   top: 25px;
-  font-size: 20px;
-  left: 15px;
+  transform: none;
 }
 
 form .message textarea {
@@ -2180,68 +2181,17 @@ footer {
 
 /* Mobile specific fixes for contact form */
 @media (max-width: 768px) {
-  /* Fix for the field icons overlapping text */
-  .form-group .field {
-    height: 50px;
-    margin: 1.2rem 0;
-    position: relative;
-  }
-  
+  /* Simple fix to make mobile inputs match desktop */
   form .field input,
   form .message textarea {
     padding: 0 16px 0 50px;
-    font-size: 15px;
   }
   
   form i {
-    position: absolute;
     left: 15px;
-    font-size: 16px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-  }
-  
-  /* Fix for message textarea */
-  form .message {
-    margin: 1.2rem 0;
-    position: relative;
   }
   
   form .message textarea {
-    padding: 12px 16px 12px 50px;
-    min-height: 120px;
-  }
-  
-  form .message i {
-    top: 20px;
-    transform: none;
-  }
-  
-  .contact .content .field input, 
-  .contact .content .message textarea {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-  }
-
-  [data-theme="dark"] .contact .content .field input, 
-  [data-theme="dark"] .contact .content .message textarea {
-    background-color: rgba(30, 30, 40, 0.9);
-  }
-  
-  /* Center the form container better */
-  .contact .container {
-    max-width: 95%;
-    margin: 2rem auto;
-  }
-  
-  .contact .container .content {
-    justify-content: center;
-    padding: 2rem 1rem;
-  }
-  
-  .contact .content .form-container {
-    max-width: 100%;
-    margin: 0 auto;
+    padding: 10px 16px 0 50px;
   }
 }
