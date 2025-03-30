@@ -1,7 +1,7 @@
 # 🚀 Jaideep's Portfolio
 
 <div align="center">
-  <img src="assets/images/hero.png" alt="Portfolio Banner" width="80%">
+  <img src="assets/images/hero.png" alt="Portfolio Banner" width="50%">
 
   [![Netlify Status](https://api.netlify.com/api/v1/badges/netlify-id/deploy-status)](https://app.netlify.com/sites/jaideep-portfolio/deploys)
   ![GitHub last commit](https://img.shields.io/github/last-commit/jaideep-27/portfolio?style=flat-square)
