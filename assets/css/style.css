@@ -2184,6 +2184,7 @@ footer {
   .form-group .field {
     height: 50px;
     margin: 1.2rem 0;
+    position: relative;
   }
   
   form .field input,
@@ -2193,22 +2194,28 @@ footer {
   }
   
   form i {
-    left: 18px;
+    position: absolute;
+    left: 15px;
     font-size: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
   }
   
   /* Fix for message textarea */
   form .message {
     margin: 1.2rem 0;
+    position: relative;
   }
   
   form .message textarea {
-    padding-top: 12px;
+    padding: 12px 16px 12px 50px;
     min-height: 120px;
   }
   
   form .message i {
-    top: 16px;
+    top: 20px;
+    transform: none;
   }
   
   .contact .content .field input, 
